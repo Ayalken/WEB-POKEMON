@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef; 
+}
+.padre {
+    display: grid;
+    grid-template-areas: 
+        "nav"
+    				"cont"
+        "content";
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+}
+.nav {
+    grid-area: nav;
+}
+.cont1 {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-template-rows: repeat(7, auto); 
+    gap: 20px; 
+    padding: 20px; 
+}
+.card1, .card2, .card3, .card4, .card5, .card6,
+.card7, .card8, .card9, .card10, .card11, .card12,
+.card13, .card14, .card15, .card16, .card17, .card18,
+.card19, .card20, .card21, .card22, .card23, .card24,
+.card25, .card26, .card27, .card28, .card29, .card30,
+.card31, .card32, .card33 {
+    border-radius: 12px; 
+    padding: 20px; 
+    color: white; 
+    transition: transform 0.3s, box-shadow 0.3s; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.card1, .card3, .card5, .card7, .card9, .card11, .card13, .card15, .card17, .card19, .card21, .card23, .card25, .card27, .card29, .card31, .card33 {
+    background-color: #ff4757; 
+}
+.card2, .card4, .card6, .card8, .card10, .card12, .card14, .card16, .card18, .card20, .card22, .card24, .card26, .card28, .card30, .card32 {
+    background-color: #6c5ce7; 
+}
+.card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover,
+.card6:hover, .card7:hover, .card8:hover, .card9:hover, .card10:hover,
+.card11:hover, .card12:hover, .card13:hover, .card14:hover, .card15:hover,
+.card16:hover, .card17:hover, .card18:hover, .card19:hover, .card20:hover,
+.card21:hover, .card22:hover, .card23:hover, .card24:hover, .card25:hover,
+.card26:hover, .card27:hover, .card28:hover, .card29:hover, .card30:hover,
+.card31:hover, .card32:hover, .card33:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}

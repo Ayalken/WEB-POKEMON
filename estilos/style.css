@@ -1,0 +1,101 @@
+
+.header {
+    grid-area: header;
+    border-left: 7px solid black; 
+    border-right: 7px solid black; 
+      grid-template-columns: 2fr 2fr 2fr;
+    grid-template-areas: "nav nav nav"
+    "cont1 cont1 cont1 cont1 "
+    "cont3 cont3 cont3 cont3"
+    "card1 card2 card3";
+    background: linear-gradient(to bottom, #ffcc00, #000000);
+    padding: 20px;
+    text-align: center; 
+}
+.header h1 {
+    font-size: 3rem;
+    color: #333;
+    margin: 0; 
+}
+.header p {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 10px 0 0; 
+}
+.header .nav {
+    grid-area: nav;
+    margin-bottom: 20px;
+}
+.nav .navbar {
+    border: 1px solid #ddd; 
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+.header .cont1 {
+    grid-area: cont1;
+    margin-bottom: 20px;
+}
+.cont1 .carousel-inner img {
+    height: 500px; 
+    object-fit: cover; 
+}
+.header .cont3 {
+    grid-area: cont3;
+    text-align: center; 
+    margin-bottom: 20px;
+    border-left: 7px solid black; 
+    border-right: 7px solid black; 
+    background: linear-gradient(to bottom, #ffcc00, #000000); 
+    display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px; 
+}
+.cont3 h2 {
+    margin-bottom: 20px;
+    color: #ff4757; 
+    font-size: 2rem; 
+    grid-column: 1 / -1; 
+}
+.card {
+    grid-area: card;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+    margin: 0; 
+}
+.card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); 
+}
+.foot {
+    grid-area: foot;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 0.9rem; 
+    color: #666; 
+}
+.btn-group .btn {
+    margin: 5px; 
+    font-weight: bold;
+}
+.btn-danger {
+    background-color: #ff4500; 
+    border: none; 
+}
+.btn-warning {
+    background-color: #ffd700; 
+    border: none; 
+}
+.btn-success {
+    background-color: #32cd32; 
+    border: none; 
+}
+.card-title {
+    color: #ff0000; 
+}
+.nav-link {
+    color: #333; 
+    font-weight: 500; 
+}
+.nav-link:hover {
+    color: #ff4757; 
+}
